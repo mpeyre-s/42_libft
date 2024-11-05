@@ -6,7 +6,7 @@
 /*   By: mathispeyre <mathispeyre@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 15:44:59 by mathispeyre       #+#    #+#             */
-/*   Updated: 2024/11/04 16:03:20 by mathispeyre      ###   ########.fr       */
+/*   Updated: 2024/11/05 09:41:23 by mathispeyre      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
 
 	i = 0;
 	if (!src)
-		return (0);
+		return (i);
 	if (dstsize != 0)
 	{
 		while (src[i] && i < (dstsize - 1))
