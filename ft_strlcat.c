@@ -6,7 +6,7 @@
 /*   By: mathispeyre <mathispeyre@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 16:07:41 by mathispeyre       #+#    #+#             */
-/*   Updated: 2024/11/04 16:28:04 by mathispeyre      ###   ########.fr       */
+/*   Updated: 2024/11/05 09:39:08 by mathispeyre      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,8 @@ size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 	i = 0;
 	if (dstsize <= dst_len)
 		return (dstsize + src_len);
+	if (dstsize == 0)
+		return (src_len);
 	while (src[i] && i + dst_len < (dstsize - 1))
 	{
 		dst[i + dst_len] = src[i];
