@@ -6,7 +6,7 @@
 /*   By: mathispeyre <mathispeyre@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 16:44:51 by mathispeyre       #+#    #+#             */
-/*   Updated: 2024/11/07 10:28:10 by mathispeyre      ###   ########.fr       */
+/*   Updated: 2024/11/07 19:26:09 by mathispeyre      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -87,7 +87,8 @@ char	**ft_split(char const *s, char c)
 			s += sizewords(s, c);
 			i++;
 		}
-		s++;
+		else
+			s++;
 	}
 	result[i] = 0;
 	return (result);
