@@ -6,7 +6,7 @@
 /*   By: mathispeyre <mathispeyre@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/04 13:13:58 by mathispeyre       #+#    #+#             */
-/*   Updated: 2024/11/08 11:58:30 by mathispeyre      ###   ########.fr       */
+/*   Updated: 2024/11/08 13:20:09 by mathispeyre      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_strjoin(char const *s1, char const *s2);
-char	*ft_strtrim(char *s);
+char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_itoa(int n);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
@@ -53,5 +53,15 @@ void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
+
+// void	ft_lstadd_back(t_list **list, t_list *new);
+// void	ft_lstadd_front(t_list **list, t_list *new);
+// void	ft_lstclear(t_list *list, void (*del)(void *));
+// void	ft_lstdelone(t_list *list, void (*del)(void *));
+// void	ft_lstiter(t_list *list, void (*f)(void *));
+// t_list	*ft_lstlast(t_list *list);
+// t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
+// t_list	*ft_lstnew(void *content);
+// int		ft_lstsize(t_list *list);
 
 #endif
