@@ -6,7 +6,7 @@
 /*   By: mathispeyre <mathispeyre@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/07 17:45:30 by mathispeyre       #+#    #+#             */
-/*   Updated: 2024/11/07 19:16:10 by mathispeyre      ###   ########.fr       */
+/*   Updated: 2024/11/08 09:04:21 by mathispeyre      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -44,7 +44,7 @@ char	*ft_itoa(int n)
 		return (NULL);
 	result[len] = 0;
 	if (is_negative)
-		n = -n;
+		n = n * (-1);
 	while (len-- > 0)
 	{
 		result[len] = (n % 10) + '0';
