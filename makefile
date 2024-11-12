@@ -8,7 +8,8 @@ FILES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalpha.c ft_isalnum.c \
 		ft_strjoin.c ft_strdup.c ft_striteri.c ft_strlcat.c ft_strlcpy.c \
 		ft_strlen.c ft_strmapi.c ft_strnstr.c ft_strncmp.c ft_strrchr.c \
 		ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c ft_split.c
-
+BONUS = ft_lstnew.c
+BONUS_OBJS = $(BONUS:.c=.o)
 HEAD = libft.h
 OBJ = $(FILES:.c=.o)
 
@@ -20,12 +21,15 @@ $(NAME): $(OBJ)
 %.o: %.c $(HEAD)
 	$(CC) $(CFLAGS) -c $< -o $@
 
+bonus: $(OBJ) $(BONUS_OBJS)
+	ar rcs $(NAME) $(OBJ) $(BONUS_OBJS)
+
 clean:
-	rm -f $(OBJ)
+	rm -f $(OBJ) $(BONUS_OBJS)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.PHONY: all clean fclean re
+.PHONY: all clean fclean re bonus
