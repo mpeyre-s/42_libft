@@ -6,7 +6,7 @@
 /*   By: mathispeyre <mathispeyre@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 14:27:37 by mathispeyre       #+#    #+#             */
-/*   Updated: 2024/11/14 10:20:10 by mathispeyre      ###   ########.fr       */
+/*   Updated: 2024/11/14 10:24:04 by mathispeyre      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,4 +34,3 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	result[j] = 0;
 	return (result);
 }
-
