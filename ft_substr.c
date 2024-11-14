@@ -6,7 +6,7 @@
 /*   By: mathispeyre <mathispeyre@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 14:27:37 by mathispeyre       #+#    #+#             */
-/*   Updated: 2024/11/14 09:56:47 by mathispeyre      ###   ########.fr       */
+/*   Updated: 2024/11/14 10:02:12 by mathispeyre      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,10 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	size_t	i;
 	size_t	j;
-	size_t	size;
 	char	*result;
 
 	i = start;
 	j = 0;
-	size = len;
 	if (!s)
 		return (0);
 	if (start >= ft_strlen(s))
