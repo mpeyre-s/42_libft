@@ -6,7 +6,7 @@
 /*   By: mathispeyre <mathispeyre@student.42.fr>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/06 14:27:37 by mathispeyre       #+#    #+#             */
-/*   Updated: 2024/11/08 09:37:09 by mathispeyre      ###   ########.fr       */
+/*   Updated: 2024/11/14 09:48:05 by mathispeyre      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,8 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	i = start;
 	j = 0;
 	size = len;
-	if (len > ft_strlen(s))
-		size = ft_strlen(s);
+	if (len > ft_strlen(s) - start)
+		len = ft_strlen(s) - start;
 	result = (char *)malloc(size + 1);
 	if (!result || !s)
 		return (0);
